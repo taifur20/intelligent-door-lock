@@ -116,7 +116,7 @@ For the access policy, ensure you replace aws-region, account-id, and the actual
 
 5. Now, attach the access policy to the role using following command:`aws iam put-role-policy --role-name LambdaRekognitionRole --policy-name \ LambdaPermissions --policy-document file://access-policy.json`
 
-6. Now, run the following python code to upload the images into S3 Bucket. Before running the code be sure that you keep all the images and the python file in the same directory.
+6. Now, run the following python code to upload the images into S3 Bucket. Before running the code be sure that you keep all the images and the python file in the same directory. (or use the code file named *upload-multiple-image-with-name.py*)
 ```
 import boto3
 s3 = boto3.resource('s3')
@@ -137,7 +137,7 @@ for image in images:
    #print(image[0])
    #print(image[1])
 ```
-7. Now, add the Face Index to AWS DynamoDB with full name for every image using the following python code.
+7. Now, add the Face Index to AWS DynamoDB with full name for every image using the following python code. (or use the code file named as *index-face-and-store-db.py*)
 ```
 import boto3
 from decimal import Decimal
@@ -192,7 +192,7 @@ for record in index_faces(BUCKET, KEY, COLLECTION, IMAGE_ID):
 	print "  ImageId: {}".format(face['ImageId'])
 ```
   ### Creating Custom Alexa Skill
-  Create a custom Alexa Skill using following JSON code
+  Create a custom Alexa Skill using following JSON code (or use *alex_skill.json* file)
   
   ```
   {
@@ -336,7 +336,7 @@ for record in index_faces(BUCKET, KEY, COLLECTION, IMAGE_ID):
 
 ### Creating Lambda Function
 1. Create a Lambda Function using *LambdaRekognitionRole* we created using aws cli.
-2. Download the code file for Lambda function from above and replace the skill id with your own. Download AWSIoTPythonSDK from the github and make a .zip folder including all (lambda code, certificate file, private key file, root ca file and SDK moudle directory).
+2. Download the code file for Lambda function (*lambda-function.py*) from above and replace the skill id with your own. Download AWSIoTPythonSDK from the github and make a .zip folder including all (lambda code, certificate file, private key file, root ca file and SDK moudle directory. For reference see *module.zip* file).
 3. Go to the Lambda function again from AWS console and from the code section choose Upload a ZIP file, browse the zip file you created and then click on Save.
 
-## You are done!
+### You have completed the work for AWS Cloud. 
