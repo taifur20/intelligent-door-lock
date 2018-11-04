@@ -1,0 +1,137 @@
+{
+    "languageModel": {
+        "invocationName": "door guard",
+        "intents": [
+            {
+                "name": "AddGuestIntent",
+                "slots": [],
+                "samples": [
+                    "Add guest in your memory",
+                    "Add person in your memory",
+                    "Add the person in your memory",
+                    "Add the guest to your memory",
+                    "Remember the man",
+                    "Remember the guy",
+                    "Remember the person",
+                    "Remember the guest",
+                    "Remember him",
+                    "Remember her",
+                    "Save the guest",
+                    "Save the person",
+                    "Save the guy",
+                    "Remember",
+                    "Save"
+                ]
+            },
+            {
+                "name": "AMAZON.CancelIntent",
+                "slots": [],
+                "samples": []
+            },
+            {
+                "name": "AMAZON.HelpIntent",
+                "slots": [],
+                "samples": []
+            },
+            {
+                "name": "AMAZON.StopIntent",
+                "slots": [],
+                "samples": []
+            },
+            {
+                "name": "CheckDoorIntent",
+                "slots": [],
+                "samples": [
+                    "Is the door unlocked",
+                    "Is the door locked",
+                    "Check door lock",
+                    "Check door ",
+                    "Is the door closed",
+                    "What is the door condition",
+                    "Is my door open",
+                    "Check my door",
+                    "Is the door open",
+                    "Check the door",
+                    "Is the door open or closed"
+                ]
+            },
+            {
+                "name": "CloseDoorIntent",
+                "slots": [],
+                "samples": [
+                    "Lock door",
+                    "Close door ",
+                    "Lock the door ",
+                    "Close the door ",
+                    "Close my door",
+                    "Make the door lock",
+                    "Make the door close",
+                    "Lock"
+                ]
+            },
+            {
+                "name": "DescribeGuestIntent",
+                "slots": [],
+                "samples": [
+                    "Tell some details about the man",
+                    "Tell some details about the guy",
+                    "Give some details about the man",
+                    "Give some details about the guy",
+                    "Give some details about the person",
+                    "Tell some details about the person",
+                    "Tell some details about the guest",
+                    "Give some details about the guest",
+                    "Introduce the person",
+                    "Introduce the guest",
+                    "Give some details",
+                    "Give details",
+                    "Explain him",
+                    "Explain her",
+                    "How is he",
+                    "How is she",
+                    "How he look",
+                    "How she looks"
+                ]
+            },
+            {
+                "name": "GiveAccessIntent",
+                "slots": [],
+                "samples": [
+                    "Let the guest come",
+                    "Let her come",
+                    "Let him come",
+                    "Allow her",
+                    "Allow him",
+                    "Let the guy enter",
+                    "Let the person enter",
+                    "Let the guest enter",
+                    "Allow the guy",
+                    "Allow the person",
+                    "Allow the guest",
+                    "Open the door",
+                    "Open",
+                    "Allow",
+                    "Open the lock",
+                    "Open lock",
+                    "Let him enter",
+                    "Let her enter"
+                ]
+            },
+            {
+                "name": "IdentifyGuestIntent",
+                "slots": [],
+                "samples": [
+                    "Who want to meet",
+                    "Who came",
+                    "Who is waiting ",
+                    "Who is at the front door",
+                    "Who",
+                    "Who is he",
+                    "Who is she",
+                    "Who is outside"
+                ]
+            }
+        ],
+        "types": []
+    }
+}
