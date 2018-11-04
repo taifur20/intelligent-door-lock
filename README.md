@@ -340,3 +340,11 @@ for record in index_faces(BUCKET, KEY, COLLECTION, IMAGE_ID):
 3. Go to the Lambda function again from AWS console and from the code section choose Upload a ZIP file, browse the zip file you created and then click on Save.
 
 ### You have completed the work for AWS Cloud. 
+
+### Code for Raspberry Pi
+1. Transfer the file *capture-button-upload-email.py* to your Raspberry Pi. This Python program takes an image when a guest press the bell button, uploads the image to S3 bucket and emails the image to the specific address set to the code.
+2. Transfer the file *aws-iot-receive.py* to your Raspberry Pi. This file receives the MQTT message from AWS IoT server, open the door and greets the guest by his/her name with the help of Amazon Polly. It also sends the command to the Arduino board using serial port.
+3. Upload the program *arduino-door-guard.ino* to the Arduino board. This program is used to open or close the lock according to the command received from Raspberry pi using serial port.
+
+### Run the Python program *capture-button-upload-email.py* and *aws-iot-receive.py* from the Raspberry Pi.
+### Congratulation! You Intelligent Door Lock is Completely Ready to Operate!!
