@@ -192,7 +192,7 @@ for record in index_faces(BUCKET, KEY, COLLECTION, IMAGE_ID):
 	print "  ImageId: {}".format(face['ImageId'])
 ```
   ### Creating Custom Alexa Skill
-  Create a custom Alexa Skill using following JSON code (or use *alex_skill.json* file)
+  Create a custom Alexa Skill using following JSON code (or use *alex_skill.json* file). If your never create a custom Alexa skill before you can follow this nice tutorial: [How To Build A Custom Amazon Alexa Skill](https://medium.com/crowdbotics/how-to-build-a-custom-amazon-alexa-skill-step-by-step-my-favorite-chess-player-dcc0edae53fb). You can also follow my tutorial from hackster.
   
   ```
   {
@@ -339,7 +339,12 @@ for record in index_faces(BUCKET, KEY, COLLECTION, IMAGE_ID):
 2. Download the code file for Lambda function (*lambda-function.py*) from above and replace the skill id with your own. Download AWSIoTPythonSDK from the github and make a .zip folder including all (lambda code, certificate file, private key file, root ca file and SDK moudle directory. For reference see *module.zip* file).
 3. Go to the Lambda function again from AWS console and from the code section choose Upload a ZIP file, browse the zip file you created and then click on Save.
 
-### You have completed the work for AWS Cloud. 
+If you need some guidance about creating AWS Lambda function follow the tutorial [AWS Lambda Functions Made Easy](https://codeburst.io/aws-lambda-functions-made-easy-1fae0feeab27).
+
+### Creating a thing on AWS IoT
+For receiving MQTT message to Raspberry Pi form AWS you need to setup AWS IoT for MQTT. To get help on configuring AWS IoT you may follow this tutorial [AWS IoT: Creating your first cloud-bound device](https://medium.com/tensoriot/aws-iot-creating-your-first-cloud-bound-device-d8dca0695f43).
+
+### You have completed the work for AWS Cloud! 
 
 ### Code for Raspberry Pi
 1. Transfer the file *capture-button-upload-email.py* to your Raspberry Pi. This Python program takes an image when a guest press the bell button, uploads the image to S3 bucket and emails the image to the specific address set to the code.
